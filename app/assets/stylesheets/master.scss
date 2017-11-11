@@ -1,6 +1,11 @@
+@import "bootstrap";
+
 .navbar {
+  color: #9414E3;
   font-family: "Helvetica Neue", Helvetica;
   font-weight: 300;
+  box-shadow: 2px 4px 6px #88BECF;
+  background: image_url('regal.png');
 }
 
 h1, h2, h3, h4, h5, h6, .navbar {
@@ -11,9 +16,12 @@ h1, h2, h3, h4, h5, h6, .navbar {
   font-family: 'Pacifico', cursive;
   font-weight: 500;
   color: #14A5E3;
-  box-shadow: 2px 4px 6px #88BECF;
   background: image_url('regal.png');
   height: 100px;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+  color: #333;
 }
 
 .hero {
@@ -46,4 +54,10 @@ h1, h2, h3, h4, h5, h6, .navbar {
 
 .btn {
   border-radius: 0;
+}
+
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
