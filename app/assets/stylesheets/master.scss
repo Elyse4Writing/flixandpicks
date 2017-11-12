@@ -66,3 +66,19 @@ body {
   background: image_url('bg.png');
   font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
 }
+
+.goodie-box h2, .goodie-box h1 {
+  margin: 10px;
+}
+
+.goodie-box {
+  -moz-box-shadow: 2px 2px 4px 0 #AFE3C7;
+  -webkit-box-shadow: 2px 2px 2px 0 #AFE3C7;
+  box-shadow: 5px 5px 2px 0 #AFE3C7;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-color: #B8C4A5 #bebebd #bebebd #B8C4A5;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  padding: 20px;
+}
