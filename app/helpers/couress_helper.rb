@@ -1,0 +1,2 @@
+module CouressHelper
+end

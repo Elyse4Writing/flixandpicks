@@ -68,12 +68,15 @@ body {
 }
 
 .goodie-box h2, .goodie-box h1 {
+  font-family: 'Pacifico', cursive;
+  font-weight: 200;
   margin: 10px;
 }
 
 .goodie-box {
   -moz-box-shadow: 2px 2px 4px 0 #AFE3C7;
   -webkit-box-shadow: 2px 2px 2px 0 #AFE3C7;
+  text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
   box-shadow: 5px 5px 2px 0 #AFE3C7;
   background: #fff;
   border: 1px solid #ccc;
@@ -90,3 +93,8 @@ body {
   padding: 2px 8px 2px 8px;
   margin: 10px;
 }
+
+.clr {
+  clear: both;
+}
+

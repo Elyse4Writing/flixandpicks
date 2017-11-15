@@ -17,20 +17,13 @@
       </button>
       <%= link_to 'Flix And Picks', root_path, class: 'navbar-brand' %>
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+      
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
        <ul class="navbar-nav mr-auto mt-2 mt-md-4">
-        </ul>
-      </div>
-    </nav>
-    
-<% if notice.present? %>
-  <p class="alert alert-info"><%= notice %></p>
-<% end %>
-
-<% if alert.present? %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
-
+         <li class="navbar-nav">
+           <%= link_to 'See All Courses', courses_path %>
+         </li>
+      </ul>
       <ul class="navbar-nav">
           <% if user_signed_in?%>
           <li class="nav-item">
@@ -45,7 +38,8 @@
           </li>
           <% end %>
       </ul>
-      
+    </div>
+  </nav>
     <%= yield %>
     
   </div>
