@@ -26,15 +26,14 @@
    <div class="col-sm-8 col-12">
      <% @course.sections.each do |section| %>
      </br></br>
-      <div class="col-12 col-sm-6">
+      <div class="col-12">
         <div class="section">
           <h3>
           <%= section.title %>
           </h3>
-        <%= section.title %>
         <div class="row">
          <% section.lessons.each do |lesson| %>
-          <div class="lesson text-center">
+          <div class="lesson col-sm-6 text-center">
             </br>
             <%= link_to lesson_path(lesson) do %>
               <b><%= lesson.title %></b>
