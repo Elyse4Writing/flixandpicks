@@ -13,12 +13,4 @@ CarrierWave.configure do |config|
   }
 end
 
-#CarrierWave.configure do |config|
-  #config.fog_provider = 'fog/aws'                        # required
-  #config.fog_credentials = {
-    #provider:              'AWS',                        # required
-    #aws_access_key_id:     ENV[AKIAJSUXRS2IS6VRHASA],   # required
-    #aws_secret_access_key: ENV[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],        # required
- #}
-  #config.fog_directory  = ENV[glickman-elyse-user]              # required
-#end
+ 
