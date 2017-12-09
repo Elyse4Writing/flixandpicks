@@ -15,15 +15,20 @@ class Instructor::CoursesController < ApplicationController
         end
     end
     
-    def show
+   def show
+     @course = Course.find(params[:id])
+   end
+
+   private
+   
+    def course_params
+      params.require(:course).permit(:title, :description, :cost, :image)
     end
     
-    private
-    
-  def require_authorized_for_current_course
-    if current_course.user != current_user
-      render plain: "Unauthorized", status: :unauthorized
-    end
+   def require_authorized_for_current_course
+     if current_course.user != current_user
+     render plain: "Unauthorized", status: :unauthorized
+   #end
   end
     
   helper_method :current_course
@@ -31,7 +36,5 @@ class Instructor::CoursesController < ApplicationController
     @current_course ||= Course.find(params[:id])
   end
 
-    def course_params
-        params.require(:course).permit(:title, :description, :cost, :image)
-    end
+
 end

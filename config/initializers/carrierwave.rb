@@ -17,8 +17,8 @@ end
   #config.fog_provider = 'fog/aws'                        # required
   #config.fog_credentials = {
     #provider:              'AWS',                        # required
-    #aws_access_key_id:     ENV[AKIAJHGCWX6VL5IIFQSQ],   # required
-    #aws_secret_access_key: ENV[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],        # required
+    #aws_access_key_id:     ENV[AKIAJSUXRS2IS6VRHASA],   # required
+    #aws_secret_access_key: ENV[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],        # required
  #}
   #config.fog_directory  = ENV[glickman-elyse-user]              # required
 #end
