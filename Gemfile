@@ -64,6 +64,7 @@ gem "mini_magick"
 gem 'carrierwave-aws'
 gem "figaro"
 gem "fog-aws"
+gem "stripe"
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
