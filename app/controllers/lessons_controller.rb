@@ -21,3 +21,4 @@ class LessonsController < ApplicationController
       redirect_to course_path(current_course), alert: 'You must be enrolled in the course to sign up for this lesson.'
     end
   end
+end
