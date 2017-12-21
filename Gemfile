@@ -65,6 +65,7 @@ gem 'carrierwave-aws'
 gem 'figaro'
 gem 'fog-aws'
 gem 'stripe'
+gem 'ranked-model'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
