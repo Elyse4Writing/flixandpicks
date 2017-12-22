@@ -5,7 +5,7 @@
      <%= image_tag @course.image, class: 'img-fluid' %>
     <br />
     <div class="row">
-      <div class="col-sm-4 col-xs-12 text-center">
+      <div class="col-sm col-xs-15 text-center">
         <span class="badge badge-default">
           <%= number_to_currency @course.cost %>
         </span>
@@ -19,7 +19,7 @@
          
          <br />
          <br />
-         
+         <%= link_to 'Enroll', course_enrollments_path(@course), class: 'btn btn-primary', method: :post %>
          
     <% if current_user %>
     <% if current_user.enrolled_in?(@course) %>
@@ -36,18 +36,18 @@
                 data-locale="auto"></script>
        <% end %>
      <% end %>
-   <%end %>
+   <% end %>
   <% else %>
     <h3 class="badge badge-info">Sign In to Enroll!</h3>
   <% end %>
 </div>
  
   
-    <div class="col-sm-8 col-xs-12">
+    <div class="col-sm-10 col-xs-15">
       <%= @course.description %>
     </div>
 
-   <div class="col-sm-8 col-12">
+   <div class="col-sm-15 col-12">
      <% @course.sections.each do |section| %>
       </br></br>
       <div class="col-12">
