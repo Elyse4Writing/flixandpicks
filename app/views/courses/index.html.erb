@@ -1,23 +1,42 @@
 <br />
 
 <div class= "goodie-box col-10 offset-1">
-    <h1 class="text-center">Learn something new today!</h1>
+    <h1 class="text-center">Generate amazing P.R. today!
+    </h1>
+
+    
+    <br />
     <br />
     
 <% @courses.each do |course| %>
-    <h2 class="text-center">
+    <div class="col-10 offset-1">
+    </div>
+    
+    <h2 class="text_truncate">    
         <%= link_to course.title, course_path(course) %>
     </h2>
+  		
      <%= image_tag course.image, class: 'img-fluid' %>
+     
     <br />
+    
+    
+    
     <div class="row">
-        <div class="col-sm-8 col-12">
+        <div class="col-sm-8 col-8">
             <%= course.description %>
         </div>
-    <div class="col-sm-4 col-12 text-center">
+    </div>
+    
+    <br />
+     
+    <div class="col-sm-4 col-12 text-left">
         <%= link_to 'More Details...', course_path(course), class: 'btn btn-primary btn-large' %>
     </div>
-</div>
+
+    
 <br class="clr" />
 <% end %>
+</div>
+
 </div>

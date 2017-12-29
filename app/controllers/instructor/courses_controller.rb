@@ -2,7 +2,6 @@ class Instructor::CoursesController < ApplicationController
     before_action :authenticate_user!
     before_action :require_authorized_for_current_course, only: [:show]
     
-     before_action :authenticate_user!
 
   def new
     @course = Course.new
@@ -38,7 +37,7 @@ class Instructor::CoursesController < ApplicationController
   end
 
   def course_params
-    params.require(:course).permit(:title, :description, :cost, :image)
+    params.require(:course).permit(:title, :image, :description, :tags, :cost)
   end
 end
 
